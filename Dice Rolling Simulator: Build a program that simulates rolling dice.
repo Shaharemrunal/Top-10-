@@ -1,0 +1,11 @@
+import random
+def roll_dice(n):
+  """Rolls n dice and returns the results."""
+  results = []
+  for i in range(n):
+    results.append(random.randint(1, 6))
+  return results
+if __name__ == "__main__":
+  # Roll two dice and print the results.
+  results = roll_dice(13)
+  print(results)
