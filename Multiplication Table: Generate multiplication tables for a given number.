@@ -1,0 +1,17 @@
+def multiplication_table(number, n):
+    print(f"Multiplication Table for {number}:")
+    for i in range(1, n + 1):
+        result = number * i
+        print(f"{number} x {i} = {result}")
+
+# Input from the user
+try:
+    num = int(input("Enter a number: "))
+    num_terms = int(input("Enter the number of terms in the table: "))
+
+    if num_terms <= 0:
+        print("Please enter a positive integer for the number of terms.")
+    else:
+        multiplication_table(num, num_terms)
+except ValueError:
+    print("Invalid input. Please enter a valid number and a positive integer for the number of terms.")
